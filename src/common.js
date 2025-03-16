@@ -55,6 +55,7 @@ const BC = {};
     calendarInfo.name = Mi.getMessage("defaultCalendarName",
         [addressBook.name]);
     calendarInfo.color = "#ffff00";
+    calendarInfo.showReminders = true;
     await Mc.calendars.create(calendarInfo);
     return true;
   };
